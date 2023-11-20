@@ -1,0 +1,88 @@
+.aboutus-section{
+    margin: 30px 0px 30px 0px;
+}
+
+.aboutus-section img{
+    width: 100%;
+}
+
+.about-vision,.about-aim,.about-message,.about-certificate{
+    width: 80%;
+    margin:auto;
+}
+
+.about-certificate p{
+    text-align: center;
+}
+
+.about-certificate img{
+    margin-top: 20px;
+}
+
+.about-vision{
+    margin-top: 50px;
+}
+
+.main-aboutus{
+    position: absolute;
+    width: 60%;
+    top:60%;
+    margin-left: 10%;
+}
+
+.aboutus-section p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+}
+
+.aboutus-section h2{
+    color: rgb(62, 169, 246);
+    position: relative;
+    display: inline-block;
+    margin: 30px 0px 20px 0px;
+    font-size: 2rem;
+}
+
+.aboutus-section h2::after{
+    content: ' ';
+    height: 4px;
+    width: 40%;
+    background: rgb(62, 169, 246);
+    position:absolute;
+    left: 0px;
+    bottom:-5px;
+    animation: 2s line;
+}
+
+.about-message p{
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .main-aboutus{
+        display: none;
+    }
+
+    .about-vision{
+        margin-top: 0px;
+    }
+
+    .about-vision,.about-aim,.about-message,.about-certificate{
+        width: 90%;
+        margin:auto;
+        text-align: justify;
+
+    }
+
+    .aboutus-section p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .aboutus-section h2{
+        font-size: 1.5rem;
+    }   
+
+}

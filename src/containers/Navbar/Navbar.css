@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.start-navbar{
+    /* position: absolute; */
+    display: flex;
+    width: 100%;
+    /* background-color: rgb(129, 200, 255); */
+        /* background: linear-gradient(to bottom right,#6bc9f5,#d1f9fd); */
+
+    /* background: transparent; */
+    background: linear-gradient(to bottom right,#6bc9f5,#d1f9fd);
+
+}
+
+.navbar-logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 5px; 
+}
+
+.navbar-logo div{
+    margin-left: 4px;
+    font-size: 1.5em;
+}
+
+.navbar-logo div p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-name{
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.navbar-items{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.navbar-items ul{
+    display: flex;
+}
+
+.navbar-items ul li{
+    list-style: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-right: 20px;
+    /* padding: 10px; */
+}
+
+.navbar-items ul li .link{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-items ul li .link:hover{
+    border-radius: 10px;
+    border-bottom: solid rgb(71, 128, 243) 4px;
+}
+
+
+.navbar-contact{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.navbar-contact ul li{
+    list-style: none;
+    margin-right: 15px;
+    display: flex;
+    color: rgb(71, 128, 243);
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.navbar-contact ul li i{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+.active{
+    background: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border-bottom: solid rgb(71, 128, 243) 4px;
+}
+
+.hamburger{
+    width: 20%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburger-size{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.mobile-navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(to bottom right,#6bc9f5,#d1f9fd);
+}
+
+.of{
+    display: none;
+}
+
+.on{
+    display: none;
+}
+
+.mobile-navbarcontact{
+    margin: 10px 0px 10px 0px;
+}
+
+.mobile-navbarcontact ul li{
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    color: rgb(71, 128, 243);
+    font-size: 1.05rem;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.mobile-navbarcontact ul li i{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.mobile-navbaritems{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.mobile-navbaritems ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-navbaritems ul li{
+    list-style: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin: 20px 0px 0px 0px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.mobile-navbaritems ul li .link{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-navbaritems ul li .link:hover{
+    border-radius: 10px;
+    border-bottom: solid rgb(71, 128, 243) 4px;
+}
+
+
+/* @media only screen and (max-width: 1370px) {
+    .navbar-logo{
+        width: 25%;
+    }
+
+    .start-navbar{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .start-navbar{
+        width: 1320px;
+    }
+} */
+  
+
+@media only screen and (max-width: 600px) {
+    .start-navbar{
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar-items,.navbar-contact{
+        display: none;
+    }
+
+    .navbar-logo{
+        width: 80%;
+    }
+
+    .navbar-logo img{
+        width: 4rem;
+        height: 4rem;
+        margin-left: 0px;
+    }
+
+    .navbar-logo div{
+        margin-left: 20px;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    /* .mobile-navbar{
+        display: flex;
+    } */
+
+    .on{
+    display: block;
+    }
+}
