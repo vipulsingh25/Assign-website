@@ -7,7 +7,7 @@ function About(){
     return (
         <>
             <div className='aboutus-section'>
-                <div><img src={ddd}></img></div>
+                <div><img src={ddd} alt=" "></img></div>
                 <div className='main-aboutus'>
                     <p>In addition, we are also pioneers in the field of membrane technology and adsorbents. We offer a wide range of high-quality membranes and adsorbents for water treatment and desalination, providing efficient and effective solutions for clients in various industries.<br/>
                         We are also at the forefront of green fuel production, specifically hydrogen gas. Our cutting-edge technology allows us to produce hydrogen gas using renewable energy sources, making it a clean and sustainable option for use in various applications.</p>                
@@ -30,7 +30,7 @@ function About(){
                 <div className='about-certificate'>
                     <h2>Certification</h2>
                     <p><i>"Our company is proud to have received recognition from the Government of India as a Startup India-certified company. This certification recognizes our innovative solutions in filtration technology, water quality sensors, green fuel hydrogen gas production and food preservations, highlighting our commitment to fostering entrepreneurship and driving sustainable growth."</i></p>
-                    <img src={certificate}></img>
+                    <img src={certificate} alt=" "></img>
                 </div>
             </div>
         </>
